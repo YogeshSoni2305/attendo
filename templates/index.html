@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,5 +22,32 @@
     </div>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition System</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Face Recognition System</h1>
+      <div class="card">
+        <video id="video" autoplay></video>
+        <div class="buttons">
+          <button id="capture-btn" class="btn primary">Scan Face</button>
+          <button onclick="sendEmail()" class="btn secondary">
+            Send Attendance
+          </button>
+        </div>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
   </body>
 </html>
