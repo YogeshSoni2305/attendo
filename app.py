@@ -57,6 +57,8 @@ from your_email_script import send_attendance_email
 app = Flask(__name__)
 
 # Configuration
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 face_db_path = "images"  # Folder with images of 50 people
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
