@@ -54,6 +54,9 @@ from werkzeug.utils import secure_filename
 import csv
 from datetime import datetime
 from your_email_script import send_attendance_email
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 app = Flask(__name__)
 
 # Configuration
